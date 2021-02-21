@@ -12,14 +12,9 @@ const linkTask = document.querySelector('.menu-link-task');
 const task =document.querySelector('.tasks-cus');
 const overview = document.querySelector('.page-inner');
 
-
   form.addEventListener('submit', function (e) {
     let num = 123;
-    if(user.value === 'Andy') {
-      home.classList.add('home-none');
-      mainPage.classList.add('main-show');
-    }
-    if(password.value === num) {
+    if(user.value === 'Andy' && parseInt(password.value, 10) === num) {
       home.classList.add('home-none');
       mainPage.classList.add('main-show');
     }
